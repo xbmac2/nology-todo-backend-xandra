@@ -5,12 +5,8 @@ import jakarta.validation.constraints.Pattern;
 public class UpdateTaskDTO {
 	@Pattern(regexp = "^(?=\\S).*$", message = "Task cannot be empty")
 	private String task;
-	
-//	@NotNull
+
 	private Boolean isComplete;
-	
-//	@Pattern(regexp = "^(true|false)$")
-//	private Boolean isComplete;
 
 	public String getTask() {
 		return task;
